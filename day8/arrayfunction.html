@@ -1,0 +1,19 @@
+<html>
+    <body id='my body'>                   
+    <script>
+        const foo = (numbers) => {
+            const bodyTag = document.getElementById('mybody');
+            
+            numbers.forEach(value,index) => { //call bcak function
+                const newDiv = document.createElement('input');
+                newDiv.value = value;
+                bodyTag.appendChil(newDiv);
+
+            });
+            
+        }
+        foo([11,21,31]);
+
+    </script>
+    </body>
+</html>
